@@ -1,0 +1,132 @@
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 47px 0 87px 42px;
+}
+
+.link-header {
+   width: 79px;
+   height: 21px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 21px;
+   text-align: center;
+   letter-spacing: 0.88px;
+   margin-right: 32px;
+   color: #17233d;
+}
+
+
+.button-header {
+    background: #6fbf44;
+    width: 124px;
+    height: 51px;
+    border-radius: 6px;
+    border: 1px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-color: #4cb538;
+}
+
+.img-group {
+    width: 595.18px;
+    height: 500px;
+    display: inline-block;
+    margin-left: 121px;
+}
+
+section {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    letter-spacing: 0.6px;
+    color: #161a49;
+    width: 582px;
+    
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    color: #4b505a;
+    width: 493px;
+    margin-top: 55px;
+}
+
+.button-main {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #6fbf44;
+    background: white;
+    border: none;
+    margin-top: 52px;
+}
+
+@media screen and (max-width: 500px) {
+    .link-header{
+        display: none;
+    
+    }
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .img-group {
+        
+        width: 500px;
+        margin: 100px 40px ;
+    }
+    
+    .button-header{
+        margin: auto 40px 0 400px;
+    }
+
+    section{
+        display: inline-block;
+                     
+        
+    }
+
+    h1 {
+        font-size: 30px;
+        width: auto;
+        text-align: center;
+        line-height: 30px;
+
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+        width: auto;
+        text-align: center;
+
+    }
+
+    
+    .button-main {
+        width: auto;
+        margin: 30px 50px;
+            
+
+    }
+
+}
