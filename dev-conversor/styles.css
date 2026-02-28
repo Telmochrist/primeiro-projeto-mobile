@@ -48,7 +48,7 @@ select, input {
     color: #555555;
 }
 
-button {
+.convert-button {
     background: #772FD3;
     border-radius: 5px;
     width: 100%;
@@ -97,7 +97,7 @@ section {
 
 }
 
-.valor {
+.valor, .valor-to-convert {
     color: #555555;
     font-weight: 700;
     font-size: 20px;
