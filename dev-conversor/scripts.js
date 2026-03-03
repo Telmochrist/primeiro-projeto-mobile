@@ -1,6 +1,7 @@
 
 const convertButton = document.querySelector(".convert-button")
-const currencySelect = document.querySelector(".currency-select")    
+const currencySelect = document.querySelector(".currency-select") 
+   
 
 function convertValues() {
     const inputCurrencyValue = document.querySelector(".input-currency").value 
@@ -10,6 +11,8 @@ function convertValues() {
     
     const dolarToday = 5.5
     const euroToday = 6.5
+    const libraToday = 6.9
+    const bitcoinToday = 343650.0
 
    
 
@@ -25,7 +28,27 @@ function convertValues() {
         style: "currency",
         currency: "EUR"
     }).format(inputCurrencyValue / euroToday)
+    }
 
+    if(currencySelect.value == "libra"){
+        valorConverted.innerHTML = new Intl.NumberFormat("en-GB", {
+        style: "currency",
+        currency: "GBP"
+    }).format(inputCurrencyValue / libraToday)
+    }
+
+    if(currencySelect.value == "bitcoin"){
+        valorConverted.innerHTML = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "BTC"
+    }).format(inputCurrencyValue / bitcoinToday)
+    }
+
+    if(currencySelect.value == "real"){
+        valorConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    }).format(inputCurrencyValue)
     }
 
 
@@ -34,7 +57,19 @@ function convertValues() {
         currency: "BRL"
     }).format(inputCurrencyValue)
 
+    
+
+
+    if(currencySelect2.value == "dolar"){
+        valorConverted.innerHTML = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD"
+    }).format(inputCurrencyValue / dolarToday)
+    }
+
 }
+
+
 
     function changeCurrency() {
         const currencyName = document.getElementById("currency-name")
@@ -48,6 +83,21 @@ function convertValues() {
         if(currencySelect.value == "euro") {
             currencyName.innerHTML = "Euro"
             currencyImage.src = "./assets/Euro.png"
+        }
+
+        if(currencySelect.value == "libra") {
+            currencyName.innerHTML = "Libra"
+            currencyImage.src = "./assets/libra 1.png"
+        }
+
+        if(currencySelect.value == "bitcoin") {
+            currencyName.innerHTML = "Bitcoin"
+            currencyImage.src = "./assets/bitcoin 1.png"
+        }
+
+        if(currencySelect.value == "real") {
+            currencyName.innerHTML = "Real"
+            currencyImage.src = "./assets/brasil.png"
         }
 
          convertValues()      
