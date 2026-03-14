@@ -1,0 +1,25 @@
+
+*{
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blueviolet;
+    font-size: 100px;
+
+}
+
+.date{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
