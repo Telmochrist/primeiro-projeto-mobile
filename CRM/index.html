@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRM-Cadastro de Clientes</title>
+</head>
+
+<body>
+    <h1>Cadastro de Clientes</h1>
+
+    <form id="cadastroCliente">
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="telefone" class="form-label">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+        <br><br>
+        <label for="endereco" class="form-label">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+        <br><br>
+        <label for="cidade" class="form-label">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+        <br><br>
+        <label for="data-nascimento" class="form-label">Data de Nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento" required>
+        <br><br>
+        <label for="texto" class="form-label"> Observações: </label>
+        <br><br>
+        <textarea id="texto" name="texto" rows="4" cols="50" placeholder="Digite suas observações aqui..."></textarea>
+        <br><br>
+        <button type="submit" id="cadastrar" class="botaoOperacao" value="listaCliente">CADASTRAR</button>
+        <button type="reset" id="cancelar" class="botaoOperacao" value="Cancelar">Cancelar</button>
+
+    </form>
+    <div class="clienteCadastrados">
+        <h2>Clientes Cadastrados</h2>
+        <table id="listaCliente">
+            <thead>
+                <tr>
+                    <th>NOME </th>
+                    <th>E-MAIL </th>
+                    <th>TELEFONE </th>
+                    <th>ENDEREÇO </th>
+                    <th>CIDADE </th>
+                    <th>DATA DE NASCIMENTO </th>
+                    <th>OBSERVAÇÕES </th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
