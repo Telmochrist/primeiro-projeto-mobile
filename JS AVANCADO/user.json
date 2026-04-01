@@ -1,0 +1,25 @@
+{
+    "nome": "Rodolfo",
+    "idade": 30, 
+    "filhos": null,
+    "hobbies": ["futebol", "codar", "viajar"],
+    "casado": true,
+    "empresas": {
+        "devclub": {
+            "fundada": 2021,
+            "colaboradores": 40
+        },
+        "monster_app": {
+            "fundada": 2023,
+            "colaboradores": 4
+        },
+        "atlas": {
+            "fundada": 2023,
+            "colaboradores": 5
+        },
+        "agenda_sua": {
+            "fundada": 2023,
+            "colaboradores": 4
+        }
+    }
+}
